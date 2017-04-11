@@ -55,7 +55,7 @@ public class GreetingController {
     @GET
     @Path("/ping")
     @Produces("text/plain")
-    public String ping() {
+    public Response ping() {
         return Response.ok().entity("pong").build();
     }
 }
