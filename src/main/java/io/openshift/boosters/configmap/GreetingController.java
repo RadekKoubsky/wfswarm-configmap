@@ -56,6 +56,6 @@ public class GreetingController {
     @Path("/ping")
     @Produces("text/plain")
     public String ping() {
-        return "pong";
+        return Response.ok().entity("pong").build();
     }
 }
